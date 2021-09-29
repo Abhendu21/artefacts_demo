@@ -30,7 +30,7 @@ jobs:
           sudo apt-get install npm -y
           sudo npm install
       
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
           path: |
@@ -48,7 +48,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@v2
         with:
           name: my-artifact
           path: |
