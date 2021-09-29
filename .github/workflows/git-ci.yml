@@ -26,8 +26,8 @@ jobs:
 
       - name: Run project commands
         run: |
-          apt update -y
-          apt install npm -y
+          apt-get update -y
+          apt-get install npm -y
           npm install
 
   deploy-pipeline:
@@ -50,8 +50,8 @@ jobs:
 
       - name: Run project commands
         run: |
-          apt update -y
-          apt install npm -y
+          apt-get update -y
+          apt-get install npm -y
           npm install
-          apt install nodejs -y
+          apt-get install nodejs -y
           node index.js
